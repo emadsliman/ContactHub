@@ -173,7 +173,10 @@ if (data.length === 0) {
                           class="avatar d-flex align-items-center justify-content-center position-relative rounded-4
                           ${data[i].isfavorite &&"has-star"} ${data[i].isemergency &&"has-heart"}"
                         >
-                          <span>${data[i].contactName.split(' ')[0][0]+data[i].contactName.split(' ')[1][0]}</span>
+                          <span>
+                              ${data[i].contactName.split(' ')[0][0] + 
+                              (data[i].contactName.split(' ')[1]?.[0] || '')}
+                          </span>
 
                         </div>
 

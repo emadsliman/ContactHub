@@ -121,7 +121,10 @@ if (data.length === 0) {
                   <div
                     class="mini-avatar d-flex align-items-center justify-content-center rounded-4"
                   >
-                    <span>${data[i].contactName.split(' ')[0][0]+data[i].contactName.split(' ')[1][0]}</span>
+                    <span>
+                        ${data[i].contactName.split(' ')[0][0] + 
+                        (data[i].contactName.split(' ')[1]?.[0] || '')}
+                    </span>
                   </div>
 
                   <div class="flex-grow-1">
@@ -144,7 +147,10 @@ if (data.length === 0) {
                   <div
                     class="mini-avatar d-flex align-items-center justify-content-center rounded-4"
                   >
-                    <span>${data[i].contactName.split(' ')[0][0]+data[i].contactName.split(' ')[1][0]}</span>
+                    <span>
+                        ${data[i].contactName.split(' ')[0][0] + 
+                        (data[i].contactName.split(' ')[1]?.[0] || '')}
+                    </span>
                   </div>
 
                   <div class="flex-grow-1">
